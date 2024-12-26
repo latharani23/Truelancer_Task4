@@ -1,0 +1,231 @@
+/* home.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.home-container {
+  min-height: 100vh; /* Ensure the background covers the full height of the viewport */
+  padding: 0px; /* Add padding for better spacing */
+}
+
+.navbar {
+  margin-bottom: 0; /* Remove the margin below the navbar */
+  background-color: #1CC0FE; /* Navbar background color */
+  border-bottom: 1px solid #ddd; /* Subtle bottom border */
+  padding: 35px 30px; /* Spacing for better layout */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo and icons */
+  align-items: center; /* Vertical alignment */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 2.8rem; /* Larger brand text */
+  font-weight: bold; /* Emphasize brand text */
+  color: #007bff; /* Brand color */
+  text-decoration: none; /* Remove underline */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Flexbox for logo alignment */
+  align-items: center; /* Vertical alignment */
+}
+
+.navbar-logo {
+  max-height: 90px; /* Logo size */
+  margin-left: 20px; /* Spacing from text */
+}
+
+.navbar-icons {
+  display: flex; /* Flex layout for navbar icons */
+  font-size: 28px; /* Icon font size */
+  gap: 10px; /* Space between items */
+}
+
+/* Button styles */
+button.navbar-text {
+  background-color: #5bdc1f; /* Green background for buttons */
+  border: none; /* Remove border */
+  padding: 1px 20px;/* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 28px; /* Font size for buttons */
+  color: #ffffff; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
+  font-weight: bold; /* Bold font */
+}
+
+button.navbar-text:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Base styles for navbar text */
+.navbar-text {
+  font-size: 28px; /* Font size for navbar items */
+  color: #ffffff; /* White text color */
+  margin-right: 15px; /* Space between items */
+  cursor: pointer; /* Pointer cursor */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold font for emphasis */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Specific styles for links */
+.navbar-text.signup-link {
+  font-size: 28px; /* Consistent font size */
+  font-weight: bold; /* Emphasized text */
+}
+
+.navbar-text.login-link {
+  font-size: 28px; /* Consistent font size */
+  font-weight: bold; /* Emphasized text */
+}
+
+
+/*second navbar*/
+
+.custom-topbar {
+  background-color: #007C8B;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px; /* Adjust height if needed */
+}
+
+.tss-98aqrw-offerLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(254, 255, 229);
+  border-radius: 45px;
+  padding: 10px 16px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s;
+}
+
+.tss-98aqrw-offerLink:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.MuiTypography-root.MuiTypography-body1 {
+  font-size: 36px;
+  color: #090909;
+  text-align: center;
+}
+
+.MuiTypography-root.MuiTypography-body1 span {
+  font-size: 26px;
+  color: rgb(59, 56, 56);
+}
+/* Style for carousel button */
+.quote-button {
+  background-color: #ffffff;
+  color: rgb(93, 82, 255);
+  border-radius: 50px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-button:hover {
+  background-color: #ff6000;
+}
+
+.quote-button .arrow {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.carousel-container {
+  background: linear-gradient(to bottom, #004d73, #00b5e2);
+  padding: 90px;
+  height: 80%;
+}
+
+.carousel-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
+}
+
+
+
+/* Styling for carousel image */
+.carousel-image {
+  flex: 1;
+  max-width: 30%;
+  margin-left: 2%;
+  margin-right: 8%;
+}
+
+
+
+/* Styling for carousel image */
+.carousel-image {
+  flex: 1;
+  max-width: 30%;
+  margin-left: 2%;
+  margin-right: 8%;
+}
+
+.carousel-image img {
+  width: 40%; /* Adjust image width */
+  height: 20%;
+  margin-top: 30px; /* Optional margin to give space above the image */
+  margin-bottom: 50px;
+}
+
+/* Navbar background */
+.navbar.navbar-light.bg-light {
+  background-color: #1CC0FE !important; /* Ensure that the background color is applied */
+  border-bottom: 1px solid #ddd;
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Styling for carousel text */
+.carousel-text h1 {
+  font-size: 3rem; /* Font size for the main heading */
+  color: #ffffff;
+  font-weight: bold; /* Bold font */
+}
+
+.carousel-text h3 {
+  font-size: 2.5rem; /* Font size for the subheading */
+  color: #ffffff;
+
+}
+
+
+.d-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 29rem;
+  height: 50rem;
+  margin-left: 6%;
+  margin-right: 2%;
+
+}
+
+.card-body {
+  text-align: center;
+}

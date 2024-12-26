@@ -1,0 +1,84 @@
+
+/* Center the signup form container */
+.signup-container{
+  width: 200%;
+  max-width: 600px;
+  max-height:800px;
+  margin: 80px auto;
+  margin-top:15%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header text */
+.signup-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:34px;
+  color: #333;
+}
+
+/* Style for the input fields */
+.signup-container input {
+  width: 100%; /* Ensure full width */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 26px;
+  box-sizing: border-box;
+}
+
+/* Focus effect on input fields */
+.signup-container input :focus{
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+/* Style the signup button */
+.signup-container button{
+  width: 100%; /* Match input width */
+  padding: 12px; /* Same padding as inputs */
+  margin: 10px 0; /* Align spacing with inputs */
+  background-color: #2a2da9; /* Consistent button color */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Match input border radius */
+  font-size: 26px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure proper box model */
+}
+
+/* Hover effect for the button */
+.signup-container button:hover {
+  background-color: #1f2280; /* Slightly darker shade */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 480px) {
+  .signup-container input
+  .signup-container button {
+    font-size: 26px;
+  }
+}
+
+
+
+/* Responsive styling for small screens */
+@media (max-width: 480px) {
+  .Signup-container{
+    padding: 20px;
+  }
+
+  .Signup-container h2{
+    font-size: 26px;
+  }
+
+  .Signup-container input
+  .Signup-container button {
+    font-size: 26px;
+  }
+}
