@@ -88,26 +88,130 @@ button.navbar-text:hover {
   font-size: 28px; /* Consistent font size */
   font-weight: bold; /* Emphasized text */
 }
+/* media query above*/
+/* Media Queries */
+
+/* For large screens (1200px and above) */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 30px 20px; /* Adjust padding for larger screens */
+  }
+
+  .navbar-brand {
+    font-size: 2.5rem; /* Adjust font size for the brand */
+  }
+
+  .navbar-icons {
+    font-size: 24px; /* Adjust icon size */
+    gap: 8px; /* Reduce space between icons */
+  }
+
+  .navbar-text {
+    font-size: 24px; /* Adjust navbar text size */
+  }
+
+  button.navbar-text {
+    font-size: 24px; /* Adjust button font size */
+  }
+}
+
+/* For medium screens (960px and below) */
+@media (max-width: 960px) {
+  .navbar {
+    padding: 20px 15px; /* Adjust padding for medium screens */
+  }
+
+  .navbar-brand {
+    font-size: 2.2rem; /* Adjust brand font size */
+  }
+
+  .navbar-icons {
+    font-size: 22px; /* Adjust icon size for medium screens */
+    gap: 6px; /* Reduce space between icons */
+  }
+
+  .navbar-text {
+    font-size: 22px; /* Adjust navbar text size */
+  }
+
+  button.navbar-text {
+    font-size: 22px; /* Adjust button font size */
+  }
+}
+
+/* For small screens (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 10px; /* Adjust padding for small screens */
+    flex-direction: column; /* Stack the navbar items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar-brand {
+    font-size: 2rem; /* Adjust brand font size */
+  }
+
+  .navbar-icons {
+    font-size: 20px; /* Adjust icon size */
+    gap: 10px; /* Space between icons */
+  }
+
+  .navbar-text {
+    font-size: 20px; /* Adjust navbar text size */
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  button.navbar-text {
+    font-size: 20px; /* Adjust button font size */
+  }
+}
+
+/* For extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 5px; /* Adjust padding for extra small screens */
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem; /* Adjust brand font size */
+  }
+
+  .navbar-icons {
+    font-size: 18px; /* Adjust icon size */
+    gap: 5px; /* Reduce gap between icons */
+  }
+
+  .navbar-text {
+    font-size: 18px; /* Adjust navbar text size */
+    margin-right: 8px; /* Reduce margin */
+  }
+
+  button.navbar-text {
+    font-size: 18px; /* Adjust button font size */
+  }
+}
 
 
 /*second navbar*/
 
 .custom-topbar {
   background-color: #007C8B;
-  padding: 20px;
+  padding: 25px;
+  padding-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130px; /* Adjust height if needed */
+  height: 140px; /* Adjust height if needed */
 }
 
 .tss-98aqrw-offerLink {
   display: inline-flex;
+  padding-left: 20px;
   align-items: center;
   justify-content: center;
   background: rgb(254, 255, 229);
   border-radius: 45px;
-  padding: 10px 16px;
+  padding: 5px 6px;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: background 0.3s;
@@ -124,16 +228,102 @@ button.navbar-text:hover {
 }
 
 .MuiTypography-root.MuiTypography-body1 span {
-  font-size: 26px;
+  font-size: 36px;
   color: rgb(59, 56, 56);
 }
+/* top nav bar media query*/
+/* Media Queries */
+
+/* For large screens (1200px and above) */
+@media (max-width: 1200px) {
+  .custom-topbar {
+    padding: 15px;
+    height: 100px; /* Adjust height for large screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 {
+    font-size: 32px; /* Adjust font size for large screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 span {
+    font-size: 24px; /* Adjust span font size for large screens */
+  }
+
+  .tss-98aqrw-offerLink {
+    padding: 12px 18px; /* Adjust padding for larger screens */
+  }
+}
+
+/* For medium screens (960px and below) */
+@media (max-width: 960px) {
+  .custom-topbar {
+    height: 120px; /* Adjust height for medium screens */
+    padding: 18px;
+  }
+
+  .MuiTypography-root.MuiTypography-body1 {
+    font-size: 28px; /* Adjust font size for medium screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 span {
+    font-size: 22px; /* Adjust span font size for medium screens */
+  }
+
+  .tss-98aqrw-offerLink {
+    padding: 10px 14px; /* Adjust padding for medium screens */
+  }
+}
+
+/* For small screens (768px and below) */
+@media (max-width: 768px) {
+  .custom-topbar {
+    padding: 15px;
+    height: 110px; /* Adjust height for small screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 {
+    font-size: 24px; /* Adjust font size for small screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 span {
+    font-size: 20px; /* Adjust span font size for small screens */
+  }
+
+  .tss-98aqrw-offerLink {
+    padding: 8px 12px; /* Adjust padding for small screens */
+  }
+}
+
+/* For extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .custom-topbar {
+    padding: 12px;
+    height: 90px; /* Adjust height for extra small screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 {
+    font-size: 20px; /* Further reduce font size for extra small screens */
+  }
+
+  .MuiTypography-root.MuiTypography-body1 span {
+    font-size: 18px; /* Further reduce span font size */
+  }
+
+  .tss-98aqrw-offerLink {
+    padding: 6px 10px; /* Further adjust padding for extra small screens */
+  }
+}
+
+
+
 /* Style for carousel button */
 .quote-button {
   background-color: #ffffff;
-  color: rgb(93, 82, 255);
+  color: #000000;
+  font-weight: bold;
   border-radius: 50px;
   padding: 20px 20px;
-  font-size: 16px;
+  font-size: 26px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -143,7 +333,7 @@ button.navbar-text:hover {
 }
 
 .quote-button .arrow {
-  font-size: 20px;
+  font-size: 26px;
   margin-left: 5px;
 }
 
@@ -210,22 +400,580 @@ button.navbar-text:hover {
 
 }
 
+/*carousels media query*/
+/* Media Queries */
+
+/* For large screens (1200px and above) */
+@media (max-width: 1200px) {
+  .quote-button {
+    font-size: 24px; /* Adjust button font size */
+    padding: 18px 18px; /* Adjust padding */
+  }
+
+  .carousel-content-container {
+    padding: 70px; /* Adjust padding for the carousel content container */
+  }
+
+  .carousel-image {
+    max-width: 25%; /* Reduce max-width for the carousel image */
+  }
+
+  .carousel-text h1 {
+    font-size: 2.5rem; /* Adjust font size for main heading */
+  }
+
+  .carousel-text h3 {
+    font-size: 2rem; /* Adjust font size for subheading */
+  }
+}
+
+/* For medium screens (960px and below) */
+@media (max-width: 960px) {
+  .quote-button {
+    font-size: 22px; /* Adjust font size */
+    padding: 15px 15px; /* Adjust padding */
+  }
+
+  .carousel-content-container {
+    padding: 50px; /* Adjust padding for smaller screens */
+  }
+
+  .carousel-image {
+    max-width: 35%; /* Adjust max-width for images */
+  }
+
+  .carousel-text h1 {
+    font-size: 2rem; /* Adjust font size for main heading */
+  }
+
+  .carousel-text h3 {
+    font-size: 1.8rem; /* Adjust font size for subheading */
+  }
+}
+
+/* For small screens (768px and below) */
+@media (max-width: 768px) {
+  .quote-button {
+    font-size: 20px; /* Reduce button font size */
+    padding: 12px 12px; /* Adjust padding */
+  }
+
+  .carousel-content-container {
+    flex-direction: column; /* Stack content vertically */
+    padding: 30px; /* Reduce padding */
+  }
+
+  .carousel-image {
+    max-width: 50%; /* Increase image width */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .carousel-text h1 {
+    font-size: 1.8rem; /* Adjust font size for main heading */
+  }
+
+  .carousel-text h3 {
+    font-size: 1.6rem; /* Adjust font size for subheading */
+  }
+}
+
+/* For extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .quote-button {
+    font-size: 18px; /* Further reduce button font size */
+    padding: 10px 10px; /* Adjust padding */
+  }
+
+  .carousel-content-container {
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .carousel-image {
+    max-width: 60%; /* Further increase image width */
+  }
+
+  .carousel-text h1 {
+    font-size: 1.6rem; /* Further reduce font size for main heading */
+  }
+
+  .carousel-text h3 {
+    font-size: 1.4rem; /* Further reduce font size for subheading */
+  }
+}
+
+
+
+/*cards section styles*/
+
+/* Styles for the card container */
+.card-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: 80%; /* Adjust container height automatically based on content */
+  overflow-x: auto; /* Horizontal scroll for overflow content */
+}
+
+
 
 .d-flex {
   display: flex;
-  justify-content: flex-start;
-  gap: 1%;
-  flex-wrap: wrap;
+  justify-content: center; /* Center align the cards */
+  gap: 20px; /* Space between each card */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  margin-left: 10%; /* Left margin for first card */
+  margin-right: 5%; /* Right margin for last card */
 }
 
 .card {
-  width: 29rem;
-  height: 50rem;
-  margin-left: 6%;
-  margin-right: 2%;
+  width: 10rem; /* Set a consistent card width */
+  flex: 1; /* Flex property for responsive layout */
+  max-width: calc(15% - 0px); /* Ensure cards adapt for large screens */
+}
 
+.card:first-child {
+  margin-left: 15%; /* Remove additional margin for the first card */
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove additional margin for the last card */
 }
 
 .card-body {
+  text-align: center; /* Center align the card text */
+  padding: 20px; /* Add some padding for better aesthetics */
+  font-size: 28px;
+}
+/* Container for the recommended section */
+.recommended-section h1 {
   text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* General styling for the cards */
+.card {
+  height: 600px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Add some space between the cards */
+  margin-bottom: 40px;
+}
+
+/* Styling for the images inside cards */
+.card-img-top {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  align-self: center;
+}
+
+/* Styling for the step titles */
+.card-text-style {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
+
+/* Box divider between image and description */
+.MuiBox-root {
+  height: 10px;
+  width: 10%;
+  border-radius: 50px;
+  margin-top: 0px;
+  background-color: #000000;
+}
+
+/* Card description text */
+.card-body .card-text {
+  font-size: 28px;
+  text-align: center;
+  color: #000000;
+  margin-top: px;
+}
+
+/* part2 card media query*/
+
+/* Media Queries */
+
+/* For large screens (1200px and above) */
+@media (max-width: 1200px) {
+  .card-container {
+    padding: 20px; /* Adjust padding for large screens */
+  }
+
+  .d-flex {
+    margin-left: 5%; /* Adjust margins for better spacing on large screens */
+    margin-right: 5%;
+  }
+
+  .card {
+    width: 12rem; /* Increase card width for larger screens */
+    max-width: calc(25% - 20px); /* Adjust card width percentage */
+  }
+
+  .recommended-section h1 {
+    font-size: 40px; /* Increase header font size */
+  }
+}
+
+/* For medium screens (960px and below) */
+@media (max-width: 960px) {
+  .card-container {
+    padding: 15px; /* Reduce padding for medium screens */
+  }
+
+  .d-flex {
+    margin-left: 5%; /* Adjust margins */
+    margin-right: 5%;
+  }
+
+  .card {
+    width: 14rem; /* Slightly larger card width */
+    max-width: calc(33.33% - 20px); /* Allow cards to fit three per row */
+  }
+
+  .recommended-section h1 {
+    font-size: 34px; /* Adjust header font size */
+  }
+}
+
+/* For small screens (768px and below) */
+@media (max-width: 768px) {
+  .card-container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .d-flex {
+    margin-left: 3%; /* Reduce left margin */
+    margin-right: 3%; /* Reduce right margin */
+  }
+
+  .card {
+    width: 15rem; /* Increase card width for better fit */
+    max-width: calc(50% - 20px); /* Allow cards to fit two per row */
+  }
+
+  .recommended-section h1 {
+    font-size: 32px; /* Smaller header font size */
+  }
+}
+
+/* For very small screens (600px and below) */
+@media (max-width: 600px) {
+  .card-container {
+    padding: 5px; /* Minimal padding for very small screens */
+  }
+
+  .d-flex {
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    gap: 10px; /* Reduce gap between cards */
+  }
+
+  .card {
+    width: 100%; /* Full-width cards on very small screens */
+    max-width: 100%; /* Ensure cards take full width */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add more space between cards */
+  }
+
+  .recommended-section h1 {
+    font-size: 28px; /* Smaller font size for headers */
+  }
+}
+
+/* For extremely small screens (480px and below) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Ensure full width for very small screens */
+  }
+
+  .recommended-section h1 {
+    font-size: 26px; /* Further reduce header size */
+  }
+}
+
+/* container styles*/
+.custom-container {
+  margin-top: 100px;
+  background-color: #284357; /* Background color for the container */
+  padding-bottom: 50px;
+  border-radius: 50px;
+  height: 100%;                 /* Allow height to adjust based on content */
+  margin-left: 0%;            /* Center horizontally */
+  margin-right: 0%;           /* Center horizontally */
+  padding-top: 40px;
+  padding:100px;
+  width: 100%;
+
+  max-width: 90%; /* Prevent overflow */
+
+}
+
+
+
+
+
+/* Left Section Typography Styles */
+.custom-container h1 {
+  font-size: 8.6rem; /* Adjusted size for headings */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 15px; /* Space between headings */
+  line-height: 1.4; /* Better line spacing for readability */
+}
+
+
+.custom-container h2 {
+  font-size: 5rem; /* Slightly smaller size for secondary headings */
+  font-weight: normal; /* Standard weight for secondary text */
+}
+.custom-container h3 {
+  font-size: 3rem; /* Slightly smaller size for secondary headings */
+  font-weight: normal; /* Standard weight for secondary text */
+}
+
+/* Text Colors */
+.custom-container h1 {
+  color: #ffffff; /* White text color */
+}
+
+.custom-container h1:nth-child(2) {
+  font-size: 9rem;
+  color: #7dbadb; /* Highlighted heading in blue */
+}
+
+.custom-container h2 {
+  color: #ffffff; /* White text for secondary headings */
+}
+
+
+
+/* Main Stats Container */
+.stats-container {
+  background-color: #7DBADB; /* Light gray background */
+  border-radius: 50px; /* Rounded corners */
+  padding: 40px; /* Padding around the container */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%; /* Full width by default */
+  max-width: 1400px; /* Maximum width for larger screens */
+  min-width: 1000px; /* Minimum width for very small screens */
+  height: 100%;
+  max-height:1100px;
+  min-height: 1000px;
+  margin-top: 100px;
+  padding-bottom:30px;
+  margin:70px, auto; /* Center-align the container */
+}
+/* Typography for Stat Values */
+.custom-stat-value {
+  font-size: 89px; /* Large font size */
+  font-weight: bold; /* Bold text */
+  color:#ffffff ; /* Highlight color */
+  margin: 30px; /* Remove extra margin */
+  padding-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* Typography for Stat Labels */
+.custom-stat-label {
+  font-size: 70px;
+  color: #284357 !important; 
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0; /* Remove extra margin */
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+
+
+/* Targeting h1 inside the .stats-container */
+.stats-container h1 {
+  font-size: 5.5rem; /* Adjust size as needed */
+  font-weight: 600; /* Bold text for emphasis */
+  margin-bottom: 0px; /* Space below the value */
+  text-align: left; /* Align text to the left */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* part3  media query*/
+/* Media Queries */
+
+/* For large screens (1200px and above) */
+@media (max-width: 1200px) {
+  .custom-container {
+    width: 90%; /* 90% width on large screens */
+  }
+}
+
+/* For medium screens (960px and below) */
+@media (max-width: 960px) {
+  .custom-container {
+    width: 85%; /* 85% width on medium screens */
+  }
+
+  .stats-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .custom-stat-value {
+    font-size: 2rem; /* Smaller font size for narrow screens */
+  }
+
+  .custom-stat-label {
+    font-size: 0.9rem; /* Adjust label size */
+  }
+}
+
+/* For small screens (768px and below) */
+@media (max-width: 768px) {
+  .custom-container h1 {
+    font-size: 2.2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .custom-container h2 {
+    font-size: 2.6rem; /* Adjust secondary heading size */
+  }
+
+  .stats-container h1.custom-stat-value {
+    font-size: 2rem; /* Slightly smaller font on smaller screens */
+  }
+}
+
+/* For very small screens (600px and below) */
+@media (max-width: 600px) {
+  .custom-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .custom-container h1 {
+    font-size: 2.2rem; /* Adjust for smaller screens */
+  }
+
+  .custom-container h2 {
+    font-size: 2.6rem; /* Adjust for smaller screens */
+  }
+}
+
+/* For extremely small screens (480px and below) */
+@media (max-width: 480px) {
+  .stats-container h1.custom-stat-value {
+    font-size: 1.8rem; /* Further reduced size for very small screens */
+  }
+}
+
+/* hire button */
+/* Style for hire button */
+.hire-button {
+  background-color: #007C8B; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 15px 30px; /* Padding around the text */
+  font-size: 30px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  margin-top: 20px; /* Margin from the top */
+  display: inline-flex; /* Align items in a row */
+  align-items: center; /* Vertically center the content */
+}
+
+/* Hover effect for the button */
+.hire-button:hover {
+  background-color: #005f6b; /* Darker background on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Optional: Style for responsive layout */
+@media (max-width: 768px) {
+  .hire-button {
+    font-size: 18px; /* Adjust font size on small screens */
+    padding: 12px 25px; /* Adjust padding */
+  }
+}
+
+
+/* 4th section*/
+
+
+/* container styles*/
+.work-container {
+  margin-top: 100px;
+  background-color: #284357; /* Background color for the container */
+  padding-bottom: 50px;
+  border-radius: 50px;
+  height: 30%;                 /* Allow height to adjust based on content */
+  margin-left: 0%;            /* Center horizontally */
+  margin-right: 0%;           /* Center horizontally */
+  padding-top: 40px;
+  padding:100px;
+  width: 100%;
+  max-width: 90%; /* Prevent overflow */
+
+}
+
+
+.work-container .MuiTypography-root {
+  font-family: 'Arial', sans-serif; /* Apply a clean sans-serif font to all Typography elements */
+  margin-bottom: 10px; /* Space between Typography elements */
+}
+
+.work-container .MuiGrid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.work-container i {
+  color: #ffffff; /* Set icon color */
+  margin-bottom: 20px; /* Space between icon and text */
+}
+
+/* Ensure that the icon's size is large */
+.large-icon {
+  font-size: 80px;  /* Adjust size of the icon */
+  color: #ffffff;   /* Set color of the icons */
+  margin-bottom: 20px;  /* Space between icon and text */
+}
+
+/* Optional: Apply additional styles to the typography */
+.MuiTypography-root {
+  margin-bottom: 10px;
+}
+
+
+
+.MuiGrid-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For the Typography */
+.MuiTypography-h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.MuiTypography-p1 {
+  font-size: 2.2rem;
+  color: #ffffff;
 }
