@@ -5,6 +5,7 @@ import './home.css';  // Ensure proper styling
 import { Container, Typography, Box } from '@mui/material'; // Only one import for Box
 import { Grid2 as Grid } from '@mui/material';
 import 'font-awesome/css/font-awesome.min.css';
+import { Card, CardContent } from '@mui/material';
 
 
 
@@ -332,6 +333,164 @@ const Home = () => {
   </Grid>
   </Grid>
 </Container>
+
+{/*5thsection*/}
+<Container maxWidth="xxl"className="enterprices-container">
+            <Grid container spacing={4} alignItems="flex-start">
+                {/* Left Section: Truelancer Enterprise Content */}
+                <Grid item xs={12} md={6} className="left-container">
+                    <div className="truelancer-enterprise">
+                        <h3>Truelancer Enterprise</h3>
+                        <h2>That's How</h2>
+
+                        <h2>Top Companies </h2>
+                        <h2>Hire on Demand </h2><br></br>
+                        <Grid container spacing={0} alignItems="flex-start">
+                                <img 
+                                    src="https://www.truelancer.com/_next/static/media/enterpriseHiring.35159150.png" 
+                                    alt="Enterprise Hiring" 
+                                    className="feature-image" 
+                                /> <h4>Hire with Impact</h4>
+
+                            <Grid item xs={2} md={8}>
+                                <p>
+                                    Seamless onboarding, swift results – find the right talent for your business in just 3 to 7 days.
+                                </p>
+                            </Grid>
+                        </Grid>
+                        
+                        <Grid container spacing={0} alignItems="flex-start">
+                          
+                          <img 
+                              src="https://www.truelancer.com/_next/static/media/enterpriseTeam.ad1f96d5.png"
+                              alt="Enterprise Confidence" 
+                              className="feature-image" 
+                          />  <h4>Confident Choices, Diverse Teams</h4>
+
+                      <Grid item xs={5} md={8}>
+                          <p>
+                              Grow like wildfire, hire as you go match skills, meet needs, no fuss.
+                          </p>
+                      </Grid>
+                  </Grid>
+                        
+
+                        <Grid container spacing={0} alignItems="flex-start">
+                          
+                                <img 
+                                    src="https://www.truelancer.com/_next/static/media/enterpriseConfidence.9da246df.png" 
+                                    alt="Enterprise Confidence" 
+                                    className="feature-image" 
+                                />  <h4>Confident Choices, Diverse Teams</h4>
+
+                            <Grid item xs={5} md={8}>
+
+                                <p>
+                                    Craft a team that truly fits your business. Choose C2H for adaptability and permanent talent.
+                                </p>
+                            </Grid>
+                        </Grid>
+                    </div>
+                </Grid>
+
+{/*right container*/}
+                    
+    <Grid item xl={12} md={4}>
+    <Container maxWidth="xxl" className="right-container">
+        <Grid item xl={12} sx={{ textAlign: 'left', marginTop: '1px' }}>
+            <img
+                src="https://www.truelancer.com/_next/static/media/enterpriseMain.6c033222.png"
+                alt="Client Strip" 
+                style={{ maxWidth: '500%', height: '100%' }} 
+            />
+            <img
+                src="https://www.truelancer.com/_next/static/media/client-strip-xs.62c65e03.png"
+                alt=""
+                style={{ 
+                    maxWidth: '260%', // Increase width
+                    height: 'auto', // Maintain aspect ratio
+                    marginTop: '40px', // Push the image down
+                    display: 'block', // Ensure it's a block element
+                    marginLeft: 'auto', // Center the image horizontally
+                    marginBottom: '8%',
+                    marginRight: 'auto' // Center the image horizontally
+                }} 
+            />
+        </Grid>
+    </Container>
+</Grid>
+     </Grid>
+   </Container>
+
+{/* 6th section*/} 
+<div class="project-container">
+    <div class="image-container">
+        <img src="https://www.truelancer.com/_next/static/media/projectCoordinators.2cb520e0.png" alt="Project Coordinators"/>
+    </div>
+    <div class="text-container">
+        <h1>Project Success Partners</h1>
+        <p>Meet dedicated project coordinators ensuring flawless workflow, matching freelancers and clients for successful project outcomes.</p>
+        <div class="paragraph-container">
+          <p>Connects you to best matched freelancers for project success and satisfaction.</p>
+          <p>Smooth project workflow, ensuring a stress-free and efficient experience for clients.</p>
+          <p>On-time project delivery assurance, ensuring success for every client.</p>
+         </div>
+        </div>
+        
+</div>
+ 
+
+{/* 7th section*/}
+<Container maxWidth="xxl" className="smart-hire-container" style={{ marginTop: '40px' }}>
+    <Typography variant="h4" align="center" gutterBottom>
+        Smart Hires Powered by AI
+    </Typography>
+    
+    <div className="text-image-container">
+        <Typography variant="h2" color="textSecondary" className="text-content">
+            Elevating hires with advanced AI algorithms for smarter freelancer selection.
+        </Typography>
+        <img
+            src="https://www.truelancer.com/_next/static/media/aIMatchingImage.8ee29605.jpg"
+            alt="AI Matching"
+            className="custom-image-style"
+        />
+    </div>
+
+
+    <Grid container spacing={4} style={{ marginTop: '1%', borderRadius: '50px' }}>
+      {/* AI Matching Section */}
+      <Grid item xs={12} md={5}>
+        <Card elevation={3} style={{ width: '68rem', backgroundColor: '#7dbadb', borderRadius: '30px' }}>
+          <CardContent style={{ textAlign: 'left' }}>
+            <h5 style={{ fontSize: '4rem', color: '#483D8B', fontWeight: 'bold' }}>
+              Your Personalised AI Recruiter
+            </h5>
+            
+            <p style={{ fontSize: '3rem', color: '#000' }}>
+              Streamline hiring with your Personalised AI Recruiter's tailored recommendations.
+            </p>
+          </CardContent>
+        </Card>
+      </Grid>
+
+      {/* AI Powered Talent Scoring Section */}
+      <Grid item xs={12} md={5}>
+        <Card elevation={3} style={{ width: '68rem', backgroundColor: '#7dbadb', borderRadius: '30px' }}>
+          <CardContent style={{ textAlign: 'left' }}>
+            <h5 style={{ fontSize: '4rem', color: '#483D8B', fontWeight: 'bold' }}>
+              AI Powered Talent Scoring
+            </h5>
+            <p style={{ fontSize: '3rem', color: '#000' }}>
+              Get the best with GPT-driven recommendations and AI Scoring for expert shortlistings.
+            </p>
+          </CardContent>
+        </Card>c
+      </Grid>
+    </Grid>
+    </Container>
+
+
 
 
 <br></br><br></br>
