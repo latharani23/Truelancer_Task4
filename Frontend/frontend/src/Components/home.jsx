@@ -335,92 +335,90 @@ const Home = () => {
 </Container>
 
 {/*5thsection*/}
-<Container maxWidth="xxl"className="enterprices-container">
-            <Grid container spacing={4} alignItems="flex-start">
-                {/* Left Section: Truelancer Enterprise Content */}
-                <Grid item xs={12} md={6} className="left-container">
-                    <div className="truelancer-enterprise">
-                        <h3>Truelancer Enterprise</h3>
-                        <h2>That's How</h2>
-
-                        <h2>Top Companies </h2>
-                        <h2>Hire on Demand </h2><br></br>
-                        <Grid container spacing={0} alignItems="flex-start">
-                                <img 
-                                    src="https://www.truelancer.com/_next/static/media/enterpriseHiring.35159150.png" 
-                                    alt="Enterprise Hiring" 
-                                    className="feature-image" 
-                                /> <h4>Hire with Impact</h4>
-
-                            <Grid item xs={2} md={8}>
-                                <p>
-                                    Seamless onboarding, swift results – find the right talent for your business in just 3 to 7 days.
-                                </p>
-                            </Grid>
-                        </Grid>
-                        
-                        <Grid container spacing={0} alignItems="flex-start">
-                          
-                          <img 
-                              src="https://www.truelancer.com/_next/static/media/enterpriseTeam.ad1f96d5.png"
-                              alt="Enterprise Confidence" 
-                              className="feature-image" 
-                          />  <h4>Confident Choices, Diverse Teams</h4>
-
-                      <Grid item xs={5} md={8}>
-                          <p>
-                              Grow like wildfire, hire as you go match skills, meet needs, no fuss.
-                          </p>
-                      </Grid>
-                  </Grid>
-                        
-
-                        <Grid container spacing={0} alignItems="flex-start">
-                          
-                                <img 
-                                    src="https://www.truelancer.com/_next/static/media/enterpriseConfidence.9da246df.png" 
-                                    alt="Enterprise Confidence" 
-                                    className="feature-image" 
-                                />  <h4>Confident Choices, Diverse Teams</h4>
-
-                            <Grid item xs={5} md={8}>
-
-                                <p>
-                                    Craft a team that truly fits your business. Choose C2H for adaptability and permanent talent.
-                                </p>
-                            </Grid>
-                        </Grid>
-                    </div>
-                </Grid>
-
-{/*right container*/}
-                    
-    <Grid item xl={12} md={4}>
-    <Container maxWidth="xxl" className="right-container">
-        <Grid item xl={12} sx={{ textAlign: 'left', marginTop: '1px' }}>
-            <img
-                src="https://www.truelancer.com/_next/static/media/enterpriseMain.6c033222.png"
-                alt="Client Strip" 
-                style={{ maxWidth: '500%', height: '100%' }} 
-            />
-            <img
-                src="https://www.truelancer.com/_next/static/media/client-strip-xs.62c65e03.png"
-                alt=""
-                style={{ 
-                    maxWidth: '260%', // Increase width
-                    height: 'auto', // Maintain aspect ratio
-                    marginTop: '40px', // Push the image down
-                    display: 'block', // Ensure it's a block element
-                    marginLeft: 'auto', // Center the image horizontally
-                    marginBottom: '8%',
-                    marginRight: 'auto' // Center the image horizontally
-                }} 
-            />
+<Container maxWidth="xxl" className="enterprises-container">
+  <Grid container spacing={4} alignItems="flex-start" className="flex-container">
+    
+    {/* Text and Descriptions Section */}
+    <Grid item xs={12} md={6} className="text-container">
+      <Grid container spacing={4} alignItems="flex-start">
+        <Grid item xs={12}>
+          <h3>Truelancer Enterprise</h3>
+          <h2>That's How</h2>
+          <h2>Top Companies</h2>
+          <h2>Hire on Demand</h2>
         </Grid>
-    </Container>
+
+        <Grid item xs={12}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+    <img
+      src="https://www.truelancer.com/_next/static/media/enterpriseHiring.35159150.png"
+      alt="Hire with Impact"
+      style={{ width: '10%', height: 'auto', display: 'block' }}
+    />
+    <div>
+      <h4 style={{ fontSize: '4rem', fontWeight: 'bold', color: '#333', margin: 0 }}>
+        Hire with Impact
+      </h4>
+      <h6 style={{ fontSize: '3rem', color: '#555', marginTop: '0.5rem' }}>
+        Seamless onboarding, swift results – find the right talent for your business in just 3 to 7 days.
+      </h6>
+    </div>
+  </div>
 </Grid>
-     </Grid>
-   </Container>
+
+<Grid item xs={12}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+    <img
+      src="https://www.truelancer.com/_next/static/media/enterpriseTeam.ad1f96d5.png"
+      alt="Scale with Precision"
+      style={{ width: '10%', height: 'auto', display: 'block' }}
+    />
+    <div>
+      <h4 style={{ fontSize: '4rem', fontWeight: 'bold', color: '#333', margin: 0 }}>
+        Scale with Precision
+      </h4>
+      <h6 style={{ fontSize: '3rem', color: '#555', marginTop: '0.5rem' }}>
+        Grow like wildfire, hire as you go match skills, meet needs, no fuss.
+      </h6>
+    </div>
+  </div>
+</Grid>
+
+
+  <Grid item xs={12}>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+    <img
+      src="https://www.truelancer.com/_next/static/media/enterpriseConfidence.9da246df.png"
+      alt="Confident Choices, Diverse Teams"
+      style={{ width: '10%', height: 'auto', display: 'block' }}
+    />
+    <div>
+      <h4 style={{ fontSize: '4rem', fontWeight: 'bold', color: '#333', margin: 0 }}>
+        Confident Choices, Diverse Teams
+      </h4>
+      <h6 style={{ fontSize: '3rem', color: '#555', marginTop: '0.5rem' }}>
+        Craft a team that truly fits your business. Choose C2H for adaptability and permanent talent.
+      </h6>
+    </div>
+  </div>
+</Grid>
+      </Grid>
+    </Grid>
+
+    {/* Image Section */}
+    <Grid item xs={12} md={6} className="image-container">
+      <img
+        src="https://www.truelancer.com/_next/static/media/enterpriseMain.6c033222.png"
+        alt="Main Enterprise Image"
+        className="main-image"
+      />
+    
+    </Grid>
+    
+  </Grid>
+</Container>
+
+
 
 {/* 6th section*/} 
 <div class="project-container">
@@ -489,6 +487,117 @@ const Home = () => {
       </Grid>
     </Grid>
     </Container>
+
+
+    {/* 8th section */}
+  <div className="cards skills-container">
+  <div className="row">
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HwGm40l0u6iKFVfacPvW83QITOHMTc17Mw&s"
+          style={{ width: "90%" }}
+          alt="skills 1"
+        />
+        <div className="content">
+          <i className="bi bi-gear"></i>
+          <h3>Skilled Developers</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 1</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://img.freepik.com/premium-photo/two-women-entrepreneurs-working-together-office_93675-134968.jpg"
+          style={{ width: "90%" }}
+          alt="Skill 2"
+        />
+        <div className="content">
+          <i className="bi bi-pencil"></i>
+          <h3>Designers & Creatives</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 2</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFSKHArAUCXVZm1kxqudXkG1O5mxHX404_qQ&s"
+          style={{ width: "90%" }}
+          alt="Skill 3"
+        />
+        <div className="content">
+          <i className="bi bi-pen"></i>
+          <h3>Bloggers & Writers</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq-6n1VLemlmGxMssUtZQOuIX_kcAYGoPf0g&s"
+          style={{ width: "90%" }}
+          alt="Skill 4"
+        />
+        <div className="content">
+          <i className="bi bi-search"></i>
+          <h3>SEO Experts</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 4</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYwsf9Bj6uIrB11pFHpR0D6XxQ2qifyqeuw&s"
+          style={{ width: "90%" }}
+          alt="Skill 5"
+        />
+        <div className="content">
+          <i className="bi bi-graph-up"></i>
+          <h3>Sales & Marketing</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 5</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="bg-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aP0dWs9hb2Bemp0wCQkCKuKycIVU1mk6TQ&s"
+          style={{ width: "90%" }}
+          alt="Skill 6"
+        />
+        <div className="content">
+          <i className="bi bi-phone"></i>
+          <h3>Mobile Apps</h3>
+        </div>
+        <div className="overlay">
+          <p>Detail about Skill 6</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
