@@ -400,7 +400,10 @@ const Home = () => {
         Craft a team that truly fits your business. Choose C2H for adaptability and permanent talent.
       </h6>
     </div>
-  </div>
+  </div><br></br>
+  <button className="explore-button">
+          Explore More
+  </button>
 </Grid>
       </Grid>
     </Grid>
@@ -597,13 +600,222 @@ const Home = () => {
   </div>
 </div>
 
+{/* 9th section */}
+<div className="prime-services-container">
+            <div className="service-division">
+                <img src="https://assets.truelancer.com/assets/home_v/images/prmIcn_01.png" alt="PRIME SERVICE" />
+                <h3>PRIME SERVICE</h3>
+                <p>Get prime talent sourcing and dedicated support throughout the way.</p>
+                <img src="https://assets.truelancer.com/assets/home_v/images/prmIcn_02.webp" alt="PRIME TALENT" />
+                <h3>PRIME TALENT</h3>
+                <p>Access to handpicked, top-rated freelancers from our curated pool.</p>
+                <img src="https://assets.truelancer.com/assets/home_v/images/prmIcn_03.png" alt="PRIME MANAGERS" />
+                <h3>PRIME MANAGERS</h3>
+                <p>Access to our inhouse Prime Managers who manage your Project.</p>
+              </div>
+
+  <div className="additional-image-division" >
+  <img 
+    src="https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2017/05/paper-laptop-4.jpg"
+    alt="NEW IMAGE" 
+    style={{ 
+      width: "100%", 
+      maxWidth: "1300px",
+      height: "100vh", 
+      maxHeight: "200vh", 
+    }} 
+  />
+  <div 
+    style={{ 
+      position: "absolute", 
+      top: "50%", 
+      left: "50%", 
+      transform: "translate(-50%, -50%)", 
+      color:"#ffffff",
+      display: "flex", 
+      flexDirection: "column", 
+      alignItems: "center", 
+      textAlign: "center" 
+    }}
+  >
+<h3>GET THE TEAM
+WHICH MANAGE YOUR TASKS...</h3>
+<p>With Truelancer Prime we personally sort through our talent pool and pre-screen the best options according to your requirements. We also manage your Project on your behalf thus provising you best results with least hassle.</p>
+    <button className="learn-button">
+      Learn More
+    </button>
+  </div>
+</div>
+</div>
 
 
+{/* 10 section*/}
 
+    <div class="showcaseTeam">
+        <div id="carouselTeam" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <div class="card-body text-center">
+                            <img src="https://www.profilebakery.com/wp-content/uploads/2023/04/AI-Profile-Picture-400x400.jpg" class="avatar" alt="Team Member 1"/>
+                            <h5 class="card-title">Team Member 1</h5>
+                            <p class="card-text">Role: Developer</p>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+                        <div class="card-body text-center">
+                            <img src="https://img.freepik.com/free-psd/elegant-man-with-crossed-arms_1154-563.jpg?semt=ais_hybrid" class="avatar" alt="Team Member 2"/>
+                            <h5 class="card-title">Team Member 2</h5>
+                            <p class="card-text">Role: Designer</p>
+                        </div>
+                    </div>
+                <div class="carousel-item">
+\                        <div class="card-body text-center">
+                            <img src="https://www.profilebakery.com/wp-content/uploads/2023/04/LINKEDIN-Profile-Picture-AI-400x400.jpg" class="avatar" alt="Team Member 3"/>
+                            <h5 class="card-title">Team Member 3</h5>
+                            <p class="card-text">Role: Project Manager</p>
+                        </div>
+                    </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTeam" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTeam" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
+{/*footer section*/}
+<footer class="footer">
+  <div class="footer-links">
+    <div class="footer-column">
+      <h4>Useful links</h4>
+      <ul>
+        <li>Get Verified</li>
+        <li>Truelancer Prime</li>
+        <li>Membership Upgrade</li>
+        <li>Productivity Tools</li>
+        <li>Mobile Apps</li>
+      </ul>
+    </div>
 
-<br></br><br></br>
- <br/><br/>
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Careers</li>
+        <li>Blog</li>
+        <li>Press</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Information</h4>
+      <ul>
+        <li>Fee and Charges</li>
+        <li>Cancellation</li>
+        <li>Terms & Condition</li>
+        <li>Privacy Policy</li>
+        <li>FAQ & Useful Links</li>
+        <li>Membership policy</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Content Writers</h2>
+      <ul>
+        <li>Academic Writers</li>
+        <li>Blog Writers</li>
+        <li>Technical Writers</li>
+        <li>Copywriters</li>
+        <li>SEO Writers</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Freelancers</h2>
+      <ul>
+        <li>Freelancers in India</li>
+        <li>Freelancers in USA</li>
+        <li>Freelancers in UK</li>
+        <li>Freelancers in Philippines</li>
+        <li>Freelancers in Pakistan</li>
+        <li>Freelancers in Bangladesh</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Freelance Jobs</h2>
+      <ul>
+        <li>Freelance Writing Jobs</li>
+        <li>Graphic Design Jobs</li>
+        <li>Data Entry Jobs</li>
+        <li>Virtual Assistant Jobs</li>
+        <li>Customer Service Jobs</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Online Jobs</h2>
+      <ul>
+        <li>Work From Home Jobs</li>
+        <li>Part Time Jobs</li>
+        <li>Interior Design Jobs</li>
+        <li>Voice Over Jobs</li>
+        <li>Translator Jobs</li>
+        <li>Accounting Jobs</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Designers</h2>
+      <ul>
+        <li>Logo Designer</li>
+        <li>Web Designer</li>
+        <li>Web Developer</li>
+        <li>SEO Consultant</li>
+        <li>Android Developer</li>
+        <li>IOS Developer</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Developers</h2>
+      <ul>
+        <li>Front End Developer</li>
+        <li>Backend Developer</li>
+        <li>PHP Developer</li>
+        <li>Wordpress Developer</li>
+        <li>Java Developer</li>
+        <li>API Developer</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Translations</h2>
+      <ul>
+        <li>English to Spanish Translation</li>
+        <li>German to English Translation</li>
+        <li>English to Hindi Translation</li>
+        <li>English to Tamil Translation</li>
+        <li>English to French Translation</li>
+        <li>Spanish to English Translation</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-logos">
+    <img src="https://static.truelancer.com/truelancer-logo-dark-background_small.png" alt="Truelancer Logo" class="footer-logo" />
+    <div class="app-logos">
+      <img src="https://static.truelancer.com/assets/assets/home_v/images/google-play-store.png" alt="Play Store" class="app-logo" />
+      <img src="https://static.truelancer.com/assets/assets/home_v/images/apple-app-store.png" alt="Apple Store" class="app-logo" />
+    </div>
+  </div>
+
+  <p class="copyright-text">© 2024 Your Company Name. All rights reserved.</p>
+</footer>
 </div>
     
   );
